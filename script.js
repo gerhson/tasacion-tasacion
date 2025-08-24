@@ -28,7 +28,6 @@ logout.onclick = () => {
 
 // Datos de distritos y zonas
 const DATA = {
-  // === LIMA TOP (Distritos Premium) ===
   "San Isidro": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -89,8 +88,6 @@ const DATA = {
       "Zona Alta": 6000
     }
   },
-
-  // === LIMA MODERNA (Distritos Intermedios) ===
   "Jesus Maria": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -175,8 +172,6 @@ const DATA = {
       "Biblioteca Nacional": 6600
     }
   },
-
-  // === LIMA ESTE ===
   "Ate": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -237,8 +232,6 @@ const DATA = {
       "Huachipa": 4300
     }
   },
-
-  // === LIMA NORTE ===
   "Los Olivos": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -311,8 +304,6 @@ const DATA = {
       "Tungasuca": 2950
     }
   },
-
-  // === LIMA SUR ===
   "Chorrillos": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -385,8 +376,6 @@ const DATA = {
       "Zona Arqueologica": 3400
     }
   },
-
-  // === CALLAO ===
   "Callao": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -459,8 +448,6 @@ const DATA = {
       "Costa Verde": 3300
     }
   },
-
-  // === BALNEARIOS ===
   "Santa Maria del Mar": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -545,8 +532,6 @@ const DATA = {
       "Zona Rural": 2700
     }
   },
-
-  // === OTROS DISTRITOS ===
   "Cercado de Lima": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -734,5 +719,6 @@ document.addEventListener("DOMContentLoaded", () => {
     calcular();
   });
 });
+
 
 
