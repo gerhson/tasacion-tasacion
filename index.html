@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Tasación</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="gate">
+  <h2>Acceso a la calculadora</h2>
+  <input type="password" id="clave" placeholder="Ingresa la clave">
+  <button id="btnLogin">Entrar</button>
+  <p id="gateMsg" style="color:red"></p>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <h2>Calculadora de Tasación</h2>
+  <form id="calc">
+
+    <label for="tipo">Tipo de inmueble</label>
+    <select id="tipo">
+      <option value="">Selecciona tipo</option>
+      <option value="departamento">Departamento</option>
+      <option value="casa">Casa</option>
+      <option value="terreno">Terreno</option>
+    </select>
+
+    <label for="distrito">Distrito</label>
+    <select id="distrito">
+      <option value="">Selecciona un distrito</option>
+    </select>
+
+    <label for="zona">Zona</label>
+    <select id="zona">
+      <option value="">Selecciona una zona</option>
+    </select>
+
+    <label for="antiguedad">Antigüedad (años)</label>
+    <input type="number" id="antiguedad" min="0">
+
+    <label for="piso">Piso</label>
+    <input type="number" id="piso" min="0">
+
+    <label for="ascensor">Ascensor</label>
+    <select id="ascensor">
+      <option value="">Selecciona</option>
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="dormitorios">Dormitorios</label>
+    <input type="number" id="dormitorios" min="0">
+
+    <label for="banos">Baños</label>
+    <input type="number" id="banos" min="0">
+
+    <label for="areaConstruida">Área Construida (m²)</label>
+    <input type="number" id="areaConstruida" min="0">
+
+    <label for="areaLibre">Área Libre (m²)</label>
+    <input type="number" id="areaLibre" min="0">
+
+    <label for="areaTerreno">Área Terreno (m²)</label>
+    <input type="number" id="areaTerreno" min="0">
+
+    <label for="moneda">Moneda</label>
+    <select id="moneda">
+      <option value="S/">S/ Soles</option>
+      <option value="$">USD</option>
+    </select>
+
+    <label for="estado">Estado de conservación</label>
+    <select id="estado">
+      <option value="excelente">Excelente</option>
+      <option value="bueno">Bueno</option>
+      <option value="regular">Regular</option>
+      <option value="remodelar">Remodelar</option>
+    </select>
+
+    <label for="eficiencia">Eficiencia energética</label>
+    <select id="eficiencia">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+    </select>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div class="resultado" id="resultado"></div>
+  <button id="logout">Cerrar sesión</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
