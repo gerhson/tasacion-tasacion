@@ -27,7 +27,7 @@ logout.onclick = () => {
 };
 
 // Datos de distritos y zonas
-const data = {
+const DATA = {
   // === LIMA TOP (Distritos Premium) ===
   "San Isidro": {
     type: ["Departamento", "Casa", "Terreno"],
@@ -734,4 +734,5 @@ document.addEventListener("DOMContentLoaded", () => {
     calcular();
   });
 });
+
 
