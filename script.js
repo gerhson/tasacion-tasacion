@@ -27,7 +27,7 @@ logout.onclick = () => {
 };
 
 // Datos de distritos y zonas
-const DATA = {
+const data = {
   "San Isidro": {
     type: ["Departamento", "Casa", "Terreno"],
     zones: {
@@ -631,12 +631,12 @@ function calcular() {
   const estado = document.getElementById('estado').value;
   const eficiencia = document.getElementById('eficiencia').value;
 
-  if (!DATA[distrito] || !DATA[distrito].zones[zona]) {
+  if (!data[distrito] || !data[distrito].zones[zona]) {
     alert("Selecciona distrito y zona válidos");
     return;
   }
 
-  let base = DATA[distrito].zones[zona] * (areaConstruida + areaLibre * FACTORES_TASACION.areaLibre[tipo]);
+  let base = data[distrito].zones[zona] * (areaConstruida + areaLibre * FACTORES_TASACION.areaLibre[tipo]);
   if(tipo === "casa") base += areaTerreno;
   base *= FACTORES_TASACION.tipoInmueble[tipo];
   base *= Math.min(1 - antiguedad * FACTORES_TASACION.antiguedad.depreciacionAnual, 1 - FACTORES_TASACION.antiguedad.depreciacionMaxima);
@@ -719,6 +719,7 @@ document.addEventListener("DOMContentLoaded", () => {
     calcular();
   });
 });
+
 
 
 
